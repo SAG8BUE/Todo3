@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(13, 187, 13, 0);
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(150, 64, 71, 0.356);
+    box-shadow: #71f704;
+}
+
+/* Style the header */
+header {
+    background-color: thistle;
+    padding: 13px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+
+}
+
+#todoInput {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    background-color: rgba(132, 165, 125, 0.356);
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: rgba(200, 147, 207, 0.356);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgba(177, 206, 139, 0.356);
+    border-color: black;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 12px;
+    margin: 10px auto;
+    width: 80%;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-block: 12px;
+    padding-inline: 12px;
+}
+
+li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+#todoApp {
+    margin-bottom: 20px;
+}
+
+#todoInput {
+    padding: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#historyContainer,
+#hiddenHistory {
+    border-left: 20px;
+    list-style-type: none;
+    padding: 25px;
+    margin: 25;
+    background-color: lightblue;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#historyContainer li,
+#hiddenHistory li {
+
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    margin: auto;
+    width: auto;
+    background-color: #f1f1f1;
+    height: auto;
+    /* only for demonstration, should be removed */
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+
+footer {
+    background-color: gray;
+    padding: auto;
+    text-align: center;
+    color: black;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+}  

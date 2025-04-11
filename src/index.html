@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Anwendung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>To-Do Liste</h1>
+    </header>
+    <section>
+        <nav>
+            <div id="todoApp">
+                <input type="text" id="todoInput" placeholder="Neue Aufgabe hinzufügen">
+                <input type="text" id="todoInput" placeholder="Neue Aufgabe hinzufügen">
+                <button onclick="addTodo()">Hinzufügen</button>
+                <ul id="todoList"></ul>
+        </nav>
+        <article>
+            </div class="myContainer">
+            <div style="background-color: rgba(8, 8, 247, 0.288);">
+                <h2>Erledigte Aufgaben</h2>
+                <ul id="historyContainer"></ul>
+            </div>
+            </div>
+        </article>
+    </section>
+<button onclick="showContent()">Ältere Aufgaben</button>
+    <template>
+  
+        <footer>
+            <div class="myContainer">
+                <div style="background-color: rgba(243, 154, 236, 0.473);">
+                    <h3>Ältere erledigte Aufgaben</h3>
+                    <ul id="hiddenHistory"></ul>
+                </div>
+        </footer>
+    
+
+    </template>
+
+
+    <search>
+        <form>
+            <input name="fsrch" id="fsrch" placeholder="Aufgaben Bibliothek">
+        </form>
+    </search>
+
+    <script src="script.js"></script>
+    <script src="TaskLibrary.js"></script>
+    
+</body>
+
+</html>
